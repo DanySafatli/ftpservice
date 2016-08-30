@@ -20,8 +20,13 @@ Provide code examples and explanations of how to get the project.
 
 ```
 yum install -y vsftpd
-
+systemctl enable vsftpd
+systemctl start vsftpd
+systemctl status vsftpd
+netstat -ltn
 ```
+You will see that port 21 is listened on for ipv6 only.  
+
 
 
 ## API Reference
