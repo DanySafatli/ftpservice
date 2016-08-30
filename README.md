@@ -26,6 +26,8 @@ systemctl status vsftpd
 netstat -ltn
 ```
 You will see that port 21 is listened on for ipv6 only.  
+Test the ftp location, open a browser on the machine where the ftp was installed and navigate to the url, for example ftp://192.168.56.103  
+the pub directory is pointing to /var/ftp/pub in the machine  
 
 
 
