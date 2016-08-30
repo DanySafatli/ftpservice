@@ -16,7 +16,7 @@ A short description of the motivation behind the creation and maintenance of the
 Provide code examples and explanations of how to get the project.
 
 ## Usage Instructions  
-###Host Server  
+### Host Server  
 
 ```
 yum install -y vsftpd
@@ -28,7 +28,11 @@ netstat -ltn
 You will see that port 21 is listened on for ipv6 only.  
 Test the ftp location, open a browser on the machine where the ftp was installed and navigate to the url, for example ftp://192.168.56.103  
 the pub directory is pointing to /var/ftp/pub in the machine  
-
+#### Configuring Anonymous Access  
+```
+cd /etc/vsftpd
+vim vsftpd.conf
+```
 
 
 ## API Reference
